@@ -1351,7 +1351,18 @@ input, select, textarea {
 
 			.poptrox-popup .caption {
 				display: block !important;
-			}
+			        padding: 0.8em 1em;
+ 		   }
+
+ 		   .poptrox-popup .caption h2 {
+ 		       margin: 0;
+   			     font-size: 1em;
+ 			   }
+
+   			 .poptrox-popup .caption p {
+   			     display: none;
+ 		   }
+		}
 
 			.poptrox-popup .closer,
 			.poptrox-popup .nav-previous,
