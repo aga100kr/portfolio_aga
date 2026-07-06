@@ -1671,7 +1671,7 @@ input, select, textarea {
 			}
 
 			#main .thumb > p {
-				display: block;
+				display: none;
 			}
 
 		#main:after {
