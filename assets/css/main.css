@@ -1353,7 +1353,7 @@ input, select, textarea {
 			}
 
 			.poptrox-popup .caption {
-				display: none !important;
+				display: block !important;
 			        padding: 0.8em 1em;
  		   }
 
@@ -1363,7 +1363,7 @@ input, select, textarea {
  			   }
 
    			 .poptrox-popup .caption p {
-   			     display: bock;
+   			     display: block;
 				 /*margin-bottom: 0;
    			     font-size: 0.9em;*/
  		   }
