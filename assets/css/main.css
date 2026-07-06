@@ -1362,8 +1362,8 @@ input, select, textarea {
    			     font-size: 1em;
  			   }
 
-   			 /*.poptrox-popup .caption p {
-   			     display: none;*/
+   			 .poptrox-popup .caption p {
+   			     display: none;
  		   }
 		}
 
