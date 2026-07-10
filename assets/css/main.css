@@ -2054,45 +2054,6 @@ input, select, textarea {
 
 		}
 
-
-
-
-	.poptrox-overlay {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-}
-
-.poptrox-popup {
-    display: flex !important;
-    flex-direction: column;
-    width: 100vw !important;
-    height: 100vh !important;
-    max-width: 100vw !important;
-    max-height: 100vh !important;
-    box-sizing: border-box;
-}
-
-.poptrox-popup .pic {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.poptrox-popup .pic img {
-    max-width: 100%;
-    max-height: calc(100vh - 160px);
-    width: auto;
-    height: auto;
-}
-
-.poptrox-popup .caption {
-    width: 100%;
-    box-sizing: border-box;
-}
-
 /* Footer */
 
 	#footer .copyright {
