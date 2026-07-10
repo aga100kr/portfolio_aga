@@ -237,7 +237,7 @@
 			});
 
 		// Poptrox.
-			$main.poptrox({
+		/*	$main.poptrox({
 				baseZIndex: 20000,
 				caption: function($a) {
 
@@ -267,7 +267,7 @@
 				usePopupLoader: true,
 				usePopupNav: true,
 				windowMargin: 50
-			});
+			}); */
 
 			// Hack: Set margins to 0 when 'xsmall' activates.
 				breakpoints.on('<=xsmall', function() {
