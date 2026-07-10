@@ -1372,7 +1372,7 @@ input, select, textarea {
 			.poptrox-popup .closer,
 			.poptrox-popup .nav-previous,
 			.poptrox-popup .nav-next {
-				display: block !important;
+				display: none !important;
 			}
 
 		}
