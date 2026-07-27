@@ -1512,8 +1512,6 @@ input, select, textarea {
 
 		#header nav {
 			position: static;
-			right: 0;
-			top: 0;
 			margin-left: 2rem;
 		}
 
