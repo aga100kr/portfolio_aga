@@ -1479,6 +1479,9 @@ input, select, textarea {
 		user-select: none;
 		width: 100%;
 		z-index: 10002;
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
 	}
 
 		body.is-preload #header {
@@ -1508,9 +1511,10 @@ input, select, textarea {
 				}
 
 		#header nav {
-			position: absolute;
+			position: static;
 			right: 0;
 			top: 0;
+			margin-left: 2rem;
 		}
 
 			#header nav > ul {
