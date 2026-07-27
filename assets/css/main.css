@@ -1490,6 +1490,7 @@ input, select, textarea {
 
 		#header h1 {
 			color: #ffffff;
+			text-align: center;
 			display: inline-block;
 			font-size: 1em;
 			line-height: 1;
