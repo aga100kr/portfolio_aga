@@ -2041,11 +2041,14 @@ input, select, textarea {
 /* Footer */
 
 	#footer .copyright {
-		color: #505051;
+		color: #ffffff;
 		font-size: 0.9em;
 	}
 
 #footer h1 {
+    text-align: center;
+}
+#footer h2 {
     text-align: center;
 }
 .about-section {
@@ -2055,7 +2058,7 @@ input, select, textarea {
 }
 
 .profile-photo {
-    width: 180px;
+    width: 240px;
     flex-shrink: 0;
     border-radius: 8px;
 }
