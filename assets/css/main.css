@@ -2045,10 +2045,19 @@ input, select, textarea {
 		font-size: 0.9em;
 	}
 
-	.footer-banner{
-    width:20%;
-    border-radius:8px;
-    margin-bottom:1.5em;
+#footer h1 {
+    text-align: center;
+}
+.about-section {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    width: 180px;
+    flex-shrink: 0;
+    border-radius: 8px;
 }
 
 		#footer .copyright a {
