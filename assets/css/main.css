@@ -2045,6 +2045,12 @@ input, select, textarea {
 		font-size: 0.9em;
 	}
 
+	.footer-banner{
+    width:20%;
+    border-radius:8px;
+    margin-bottom:1.5em;
+}
+
 		#footer .copyright a {
 			color: inherit;
 		}
