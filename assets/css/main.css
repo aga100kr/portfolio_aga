@@ -414,7 +414,7 @@ input, select, textarea {
 		font-size: 0.9em;
 		font-weight: 300;
 		height: 3.05556em;
-		width: 240px;
+		width: 200px;
 		letter-spacing: 0.1em;
 		line-height: 3.05556em;
 		padding: 0 2.5em;
@@ -520,6 +520,14 @@ input, select, textarea {
 			pointer-events: none;
 			opacity: 0.35;
 		}
+
+/*Profile Pic*/
+
+.profile-photo {
+    width: 200px;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
 
 /* Form */
 
@@ -1124,14 +1132,22 @@ input, select, textarea {
 				display: flex;
 			}
 
-				.panel > .inner.split > div {
+			.inner.split > :first-child {
+ 			   width: 35%;
+				}
+
+			.inner.split > :last-child {
+			    width: 65%;
+				}
+
+				/*.panel > .inner.split > div {
 					margin-left: 4em;
 					width: 50%;
 				}
 
 				.panel > .inner.split > :first-child {
 					margin-left: 0;
-				}
+				}*/
 
 		.panel > .closer {
 			-moz-transition: opacity 0.2s ease-in-out;
@@ -2080,12 +2096,6 @@ input, select, textarea {
     display: flex;
     gap: 2em;
     align-items: flex-start;
-}
-
-.profile-photo {
-    width: 240px;
-    flex-shrink: 0;
-    border-radius: 8px;
 }
 
 		#footer .copyright a {
