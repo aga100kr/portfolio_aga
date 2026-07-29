@@ -1,4 +1,6 @@
 # portfolio_aga
+https://aga100kr.github.io/portfolio_aga/
+
 Work and side projects by André Gonçalves Andrade.
 
 Since I don't know how to code, just know the bare minimum of C from the time I was in electromechanics, I'll vibecode this website.
