@@ -1556,7 +1556,7 @@ input, select, textarea {
 
 		#header nav {
 			position: static;
-			margin-left: 2rem;
+			margin-left: 0rem;
 		}
 
 			#header nav > ul {
