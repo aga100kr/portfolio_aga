@@ -278,4 +278,8 @@
 					$main[0]._poptrox.windowMargin = 50;
 				});
 
+function jsredir() {
+  window.location.href = "https://stackoverflow.com";
+}
+
 })(jQuery);
