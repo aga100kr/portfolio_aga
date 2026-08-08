@@ -1207,7 +1207,20 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.panel {
+			
+			.panel > .inner.split {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+
+				.panel > .inner.split > div {
+					margin-left: 0;
+					width: 100%;
+				}
+			
+			/*.panel {
 				-moz-transform: translateY(-100vh);
 				-webkit-transform: translateY(-100vh);
 				-ms-transform: translateY(-100vh);
@@ -1222,7 +1235,7 @@ input, select, textarea {
 					-webkit-transform: translateY(0);
 					-ms-transform: translateY(0);
 					transform: translateY(0);
-				}
+				}*/
 
 		}
 
