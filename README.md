@@ -3,7 +3,6 @@ https://aga100kr.github.io/portfolio_aga/
 
 Work and side projects by André Gonçalves Andrade.
 
-Since I don't know how to code, just know the bare minimum of C from the time I was in electromechanics, I'll vibecode this website.
-Any bug is a feature until I found out how to fix it.
+Since they don't teach code in architecture, I'm using this project to learn html and get back to code (i did a bit when I was in eletromechanics back in covid time)
 
 //I don't know how to code but do know how to draw a house 👀, so...
