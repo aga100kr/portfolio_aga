@@ -1125,7 +1125,22 @@ input, select, textarea {
 			width: 75em;
 		}
 
-				/*.panel > .inner.split > div {
+				.panel > .inner.split {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+			}
+
+			.inner.split > :first-child {
+ 			   width: 65%;
+				}
+
+			.inner.split > :last-child {
+			    width: 35%;
+				}
+
+/*.panel > .inner.split > div {
 					margin-left: 4em;
 					width: 50%;
 				}
