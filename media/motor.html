@@ -45,8 +45,19 @@ body {color: white; text-align: center;}
         <iframe style="width: 90%; aspect-ratio: 16 / 9; height: auto;" src="https://www.youtube.com/embed/QzB6KLhrNpQ?si=V2ULwZCq1SZCOflq?autoplay=1" allow="autoplay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe><br><br>
 		<!--br><p style="margin-left:20px;margin-right:20px;">So I decided to try making an AEF 1.9D. I had to research the engine’s specifications through forums and manuals, and then, through a process of trial and error—and trying again and again until it finally worked—write something in C#. This was all done without any AI assistance, since AI like we have today simply didn’t exist in 2022. Eventually, I managed to produce what you can see in the video below.
 		The file attached to the button below, or available in my GitHub repository, was made for engine-sim-build_0_1_9a and does not work with engine-sim-v0.1.14a. I intend to write a new file for the newer version.</p><br-->
-		<br><p style="margin-left:20px;margin-right:20px;">Com isto decidi-me a tentar fazer um AEF 1.9D, o qual tive de pesquisar em fóruns e manuais as especificações deste motor, tendo depois de, a modo de tentativa-erro e tenta-de-novo-até-dar - sem ajuda de IA, que não existia em 2022 - escrever em C++ algo que depois resultou no motor que se mostra neste vídeo abaixo. Este ficheiro, anexado no botão abaixo ou achado no meu repositório de Github (~/media/images/motor), foi feito para engine-sim-build_0_1_9a, não funcionando no engine-sim-v0.1.14a, para qual irei escrever um novo ficheiro, o qual tornarei disponivel aqui e talvez no Youtube em forma de short o quanto antes.</p><br>
-		<div class="center"><ul class="actions"><li><a herf="media/images/motor/aef_1896d_v0.1.9a.mr" target="_blank" class="button_second">v0.1.9a</a></li></ul></div>
+		<br><p style="margin-left:20px;margin-right:20px;">Com isto decidi-me a tentar fazer um AEF 1.9D, o qual tive de pesquisar em fóruns e manuais as especificações deste motor, tendo depois de, a modo de tentativa-erro e tenta-de-novo-até-dar - sem ajuda de IA, que não existia em 2022 - escrever em C++ algo que depois resultou no motor que se mostra neste vídeo abaixo. Este ficheiro, anexado no botão abaixo ou achado no meu repositório de Github (~/media/images/motor), foi feito para engine-sim-build_0_1_9a, não funcionando no engine-sim-v0.1.14a, para qual irei escrever um novo ficheiro, o qual tornarei disponivel aqui e talvez no Youtube em forma de short o quanto antes.</p><br><br>
+
+<pre><code id="codigo"></code></pre>
+
+<script>
+fetch("media/images/motor/aef_1896d_v0.1.9a.md")
+    .then(response => response.text())
+    .then(text => {
+        document.getElementById("codigo").textContent = text;
+    });
+</script>
+
+		<!--div class="center"><ul class="actions"><li><a herf="media/images/motor/aef_1896d_v0.1.9a.mr" target="_blank" class="button_second">v0.1.9a</a></li></ul></div-->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
