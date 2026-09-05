@@ -51,18 +51,9 @@ body {color: white; text-align: center;}
 
 <script>
 fetch("media/images/motor/aef_1896d_v0.1.9a.mr")
-    .then(response => {
-        if (!response.ok) {
-            throw new Error("Não foi possível carregar o ficheiro");
-        }
-        return response.text();
-    })
     .then(code => {
         document.getElementById("motor-code").textContent = code;
-    })
-    .catch(error => {
-        console.error(error);
-    });
+    }); 
 </script>
 
 		<!--div class="center"><ul class="actions"><li><a herf="media/images/motor/aef_1896d_v0.1.9a.mr" target="_blank" class="button_second">v0.1.9a</a></li></ul></div-->
