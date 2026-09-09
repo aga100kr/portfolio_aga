@@ -1613,19 +1613,35 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		body {
-			padding: 4em 0 0 0;
+			padding: 0 0 4em 0;
 		}
 
 		#header {
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			bottom: auto;
-			height: 4em;
-			padding: 0 1em;
-			top: 0;
-		}
+		-moz-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+		-moz-transition: -moz-transform 1s ease;
+		-webkit-transition: -webkit-transform 1s ease;
+		-ms-transition: -ms-transform 1s ease;
+		transition: transform 1s ease;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-webkit-user-select: none;
+		background: #24211f;
+		bottom: -1em;
+		height: 5em;
+		left: 0;
+		line-height: 4em;
+		padding: 0 1.5em;
+		position: fixed;
+		user-select: none;
+		width: 100%;
+		z-index: 10002;
+		display: flex;
+  		justify-content: space-between;
+  		align-items: center;
+	}
 
 			body.is-preload #header {
 				-moz-transform: translateY(-3.4em);
