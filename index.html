@@ -36,9 +36,16 @@
 
 				<!-- Header -->
 					<header id="header">
-						<nav id="project-controls">
-							<button id="organize-button" type="button">Newest</button>
-						</nav>
+						<div class="popup" onclick="myFunction()">Order
+						<span class="popuptext" id="myPopup">
+						<div id="project-controls">
+							<button data-sort="newest">Newest</button>
+							<button data-sort="oldest">Oldest</button>
+						</div></span></div><script>
+							// When the user clicks on div, open the popup
+							function myFunction() {
+							  var popup = document.getElementById("myPopup");
+ 							 popup.classList.toggle("show");}</script>
 						<nav>
 							<ul>
 								<h1><a href="#footer">More about Me</a></h1>
@@ -49,38 +56,7 @@
   						    <a href="/portfolio_aga/indexpt.html"> PT </a>
 						</nav>
 					</header>
-
-				<!-- Organization popup -->
-<div id="organize-popup" class="organize-popup">
-
-    <div class="organize-content">
-
-        <button id="close-organize" class="close-organize" type="button">
-            ×
-        </button>
-
-        <h2>Organize projects</h2>
-
-        <h3>Order</h3>
-
-        <div class="organize-options">
-            <button data-sort="newest">Newest</button>
-            <button data-sort="oldest">Oldest</button>
-        </div>
-
-        <h3>Category</h3>
-
-        <div class="organize-options">
-            <button data-filter="all">All</button>
-            <button data-filter="sustainable">Sustainable</button>
-            <button data-filter="architecture">Architecture</button>
-            <button data-filter="personal">Personal</button>
-        </div>
-
-    </div>
-
-</div>
-				
+			
 				<!-- Main -->
 					<div id="main">
 						
