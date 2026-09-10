@@ -40,17 +40,23 @@ body {color: white; text-align: center;}
 </head>
 
 <body class="is-preloaded">
-
-		<br><h1>Lodging and art creation center</h1>
+		<div class="language-switch">
+   		 <button onclick="setLanguage('pt')">PT</button>
+   		 <button onclick="setLanguage('en')">EN</button>
+		</div>
+		<br><h1 style="margin-left:20px; margin-right:20px;"
+			data-en="Lodging and art creation center" data-pt="Alojamento para criação artistica"></h1>
         <img src="images/criar/alçado.png" style="width:100%">
-		<p style="margin-left:20px; margin-right:20px;">Located on a uninhabited street, this project was aimed to bring life to the public space. Meant to accomodate two artists temporarily, this volume was drawn in such a way that, while allowing for living and working places separately, both can be connected visually through the mezzanine that is the living room. This was my first serious attempt at architectural rendering.</p><br>
+		<p style="margin-left:20px; margin-right:20px;"
+			data-en="Located on a uninhabited street, this project was aimed to bring life to the public space. Meant to accomodate two artists temporarily, this volume was drawn in such a way that, while allowing for living and working places separately, both can be connected visually through the mezzanine that is the living room. This was my first serious attempt at architectural rendering."
+			data-pt="Localizado numa rua deserta de vida, este projeto procurou trazer atividade e vida ao espaço público. Pensado para acolher temporariamente dois artistas, o volume foi desenhado de forma a permitir separar os espaços de habitação e de trabalho, mantendo simultaneamente uma ligação visual entre ambos através do mezanino, onde se encontra a sala de estar. Este foi o meu primeiro trabalho sério de representação arquitetónica."></p><br>
 		<h4 style="margin-left:20px; margin-right:20px;">Professor: Pedro Brandão, UBI</h4><br>
         <img src="images/criar/cortes.png" style="width:90%">
-		<br><p>Sections. I wished to show how alive the space could be will having correct measurements.</p><br>
+		<br><p></p><br>
         <img src="images/criar/painel.png" style="width:90%">
-		<br><p style="margin-left:20px; margin-right:20px;">Plans and respective interior shots</p><br>
+		<br><p style="margin-left:20px; margin-right:20px;" data-en="Plans and respective interior shots" data-pt="Plantas e respetivas vistas interiores"></p><br>
 		<img src="images/criar/interior.jpg" style="width:90%">
-		<br><p style="margin-left:20px; margin-right:20px;">Living room (render done in Vray on a low level pc, my work horse for all of uni) </p><br>
+		<br><p style="margin-left:20px; margin-right:20px;" data-en="Living room (render done in Vray on a low level pc, my work horse for all of uni)" data-pt="Sala de estar (render feito em Vray num computador <i>bataturro</i>, que foi o eu computador por todo o curso"></p><br>
 		<div class="sketchfab-embed-wrapper"> <iframe title="Lodging &amp; Studio for Artists, Covilhã 2021" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/d75a86d0bce440aba4fd00c4d42cb3fb/embed" style="width: 90%; aspect-ratio: 16 / 9; height: auto;"> </iframe>
 		<p> Lodging & Studio for Artists<a href="https://sketchfab.com/3d-models/lodging-studio-for-artists-covilha-2021-d75a86d0bce440aba4fd00c4d42cb3fb">🧷</a></p></div>
 		
@@ -67,6 +73,8 @@ body {color: white; text-align: center;}
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>function setLanguage(lang) {document.querySelectorAll('[data-pt], [data-en]').forEach(element => {element.innerHTML = element.dataset[lang];});
+					localStorage.setItem('language', lang);}const savedLanguage = localStorage.getItem('language') || 'en'; setLanguage(savedLanguage); </script>
 			
 </body>
 </html>
