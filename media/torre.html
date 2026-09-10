@@ -9,58 +9,44 @@
 <style>
 body {color: white; text-align: center;}
 
-* {
-  box-sizing: border-box;
-}
+* {  box-sizing: border-box;}
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.column1 {
-        <! --margin-left:20px;-->
-  float: left;
-  width: 45%;
-  padding: 10px;
-}
-.column2 {
-        <! --margin-right:20px;-->
-  float: right;
-  width: 45%;
-  padding: 10px;
-}
+.center {  display: flex;  justify-content: center;  align-items: center;}
+.column1 {  float: left;  width: 45%;  padding: 10px;}
+.column2 {  float: right;  width: 45%;  padding: 10px;}
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.row:after {  content: "";  display: table;  clear: both;}
 </style>
 </head>
 
 <body class="is-preloaded">
-
-		<br><h1>SpotTower made with Earth for Trancoso's Castle</h1>
+		<div class="language-switch">
+   		 <button onclick="setLanguage('pt')">PT</button>
+   		 <button onclick="setLanguage('en')">EN</button>
+		</div>
+		<br><h1 style="margin-left:20px; margin-right:20px" data-en="SpotTower made with Earth for Trancoso's Castle" data-en="Torre de (Ho)Menagem em terra para o castelo de Trancoso</h1>
         <img src="images/torre/badocha.png" style="width:100%">
 		<br><br>
-		<p style="margin-left:20px; margin-right:20px">As a first approach to a town not yet well known, a tower made out of wood, dirt and straw would be implemented inside the elliptical castle of Trancoso as a view point.
-		Base structure for an 4 stage tower made with natural materials, such as dirt, straw and wood, as an artistic meet point inside the castle of Trancoso, Portugal. Part of Trancoso's call to Design.</p>
-		<h3 style="margin-left:20px; margin-right:20px">Group: André Andrade, Débora Barros, Roberto Pereira</h3><br>
+		<p style="margin-left:20px; margin-right:20px" data-en="As a first approach to a town not yet well known, a tower made out of wood, dirt and straw would be implemented inside the elliptical castle of Trancoso as a view point.
+		Base structure for an 4 stage tower made with natural materials, such as dirt, straw and wood, as an artistic meet point inside the castle of Trancoso, Portugal. Part of Trancoso's call to Design."
+			data-pt=""></p>
+		<h3 style="margin-left:20px; margin-right:20px" data-en="Group: André Andrade, Débora Barros, Roberto Pereira" data-pt="Grupo: André Andrade, Débora Barros, Roberto Pereira"></h3><br>
 		<h4 style="margin-left:20px; margin-right:20px;">Professor: Miguel Santiago, UBI</h4><br>
 		<img src="images/torre/esquema.png" style="width:90%"><br><br>
-<p style="margin-left:20px; margin-right:20px" >From a sterile tower, we aplyed cuts and slided the new volums, adding planes for pricavy/intimacy.</p><br>
+<p style="margin-left:20px; margin-right:20px" data-en="From a sterile tower, we aplyed cuts and slided the new volums, adding planes for pricavy/intimacy." data-pt="A partir de um paralelepípedo estéril, aplicamos cortes e movemos os volumes, adicionando planos para privacidade/intimidade"></p><br>
    <img src="images/torre/conjunto.png" style="width:95%"><br>
-		<br><p style="margin-left:20px; margin-right:20px">Intended to be built out of adobe or rammed earth, this tower structure was intended to be as versatile as possible to allow the best construction technique for the environment.</p><br>
+		<br><p style="margin-left:20px; margin-right:20px" data-en="Intended to be built out of adobe or rammed earth, this tower structure was intended to be as versatile as possible to allow the best construction technique for the environment."
+			data-pt="Com o intuito de ser feito em adobe ou taipa, esta torre foi pensada para ser versátil o suficiente para permitir que se possa escolher uma dos duas técnicas de construção."></p><br>
    <br><img src="images/torre/secçoes.png" style="width:95%">
-		<br><p style="margin-left:20px; margin-right:20px">The colors match the surronding buildings, yet its form diverges completely.</p><br>
+		<br><p style="margin-left:20px; margin-right:20px" data-en="The colors match the surronding buildings, yet its form diverges completely."
+				data-pt="As cores adaptam-se ao entorno, no entanto a forma diverge"></p><br>
 		<div class="sketchfab-embed-wrapper"> 
 		<iframe title="Node for an earthen tower" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9596dd1c852c4a8d931efeeaf2f85085/embed"style="width: 90%; aspect-ratio: 16 / 9; height: auto;"> </iframe>
 		<p>Node for an earthen tower<a href="https://www.behance.net/gallery/236137247/Wood-structure-for-an-earthen-tower-for-Trancoso">🧷</a></p></div>
 		<img src="images/torre/d1.png" style="width:90%">
 		<img src="images/torre/d2.png" style="width:90%">
 		<img src="images/torre/d3.png" style="width:90%">
-		<br><br><p>Some drawing from development process</p>
+		<br><br><p data-en="Some drawing from development process" data-pt="Alguns desenhos do processo de desenvolvimento"></p>
 		
                 <div class="center">
                 <ul class="actions">
@@ -76,6 +62,8 @@ body {color: white; text-align: center;}
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>function setLanguage(lang) {document.querySelectorAll('[data-pt], [data-en]').forEach(element => {element.innerHTML = element.dataset[lang];});
+					localStorage.setItem('language', lang);}const savedLanguage = localStorage.getItem('language') || 'en'; setLanguage(savedLanguage); </script>
 			
 </body>
 </html>
