@@ -40,28 +40,33 @@ body {color: white; text-align: center;}
 </head>
 
 <body class="is-preloaded">
-
-		<br><h1>Educational Bridge in Covilhã</h1>
+		<div class="language-switch">
+   		 <button onclick="setLanguage('pt')">PT</button>
+   		 <button onclick="setLanguage('en')">EN</button>
+		</div>
+		<br><h1 style="margin-left:20px; margin-right:20px;" data-en="Educational Bridge in Covilhã" data-pt="Ponte educacional na Covilhã"></h1>
         <img src="images/ponte/pano.jpg" style="width:100%">
 		<br><br><br>
-<iframe style="width: 90%; aspect-ratio: 16 / 9; height: auto;" src="https://www.youtube.com/embed/7eGg_JB7oro?si=TYxceCuWUAjoDO0F?autoplay=1&mute=1" allow="autoplay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+		<iframe style="width: 90%; aspect-ratio: 16 / 9; height: auto;" src="https://www.youtube.com/embed/7eGg_JB7oro?si=TYxceCuWUAjoDO0F?autoplay=1&mute=1" allow="autoplay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
 		<!--iframe style="width: 90%; aspect-ratio: 16 / 9; height: auto;" src="images/ponte/video.mp4" width="70%"> </iframe>
 		<br><br><p>Video</p><br><br-->
 		<div class="sketchfab-embed-wrapper"> 
 		<iframe title="EduBridge for Covilhã, 2022" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/91ea55fa2ffb44a5a80570e263c5f234/embed" style="width: 90%; aspect-ratio: 16 / 9; height: auto;"> </iframe>
 		<p> <a href="https://sketchfab.com/3d-models/edubridge-for-covilha-2022-91ea55fa2ffb44a5a80570e263c5f234"> EduBridge for Covilhã, 2022 </a></p></div>
-		<p style="margin-left:20px; margin-right:20px">Challenged by Museu dos Lanificios, part of my home university (UBI) to create an educational centre for youths to learn about wool history in Covilhã. Answered this call by solving another issue many architects tried to solve on this town before: accessibility. That’s why I’ve chosen a bridge-like structure, to allow access to different Museum’s areas, while at the same time imposing minimal footprint possible (and nice view down the valley).</p><br>
+		<p style="margin-left:20px; margin-right:20px" 
+			data-en="Challenged by Museu dos Lanificios, part of my home university (UBI) to create an educational centre for youths to learn about wool history in Covilhã. Answered this call by solving another issue many architects tried to solve on this town before: accessibility. That’s why I’ve chosen a bridge-like structure, to allow access to different Museum’s areas, while at the same time imposing minimal footprint possible (and nice view down the valley)."
+			data-pt="Desafiado pelo Museu dos Lanifício, integrado na minha unoversidade (UBI), a criar um centro educativo para alunos de básico e secundário para ensinar sobre os processos de recolha, tratamento e uso da lã, parte da história da Covilhã. Decidi responder a esta questão relembrando o programa Polis desta cidade, onde se procurava implementar uma série de ponte que acabaram por nunca se construir, tendo-se construído apenas a da carpinteira, de autoria de Carrilho da Graça. Decidi fazer então uma ponte-escola que permitisse a travessia da cascata da Goldra para a vertente inutilizada, esperando poder fazer ligação com o parque da Goldra mais a jusante/nascente e o Pólo 6 mais a montante/poente."></p><br>
         <h4 style="margin-left:20px; margin-right:20px;">Professor: Pedro Brandão, UBI</h4><br>
 		<img src="images/ponte/secçao.png" style="width:100%">
 		<br><br><br>
         <img src="images/ponte/100.png" style="width:100%">
 		<br><br>
         <img src="images/ponte/50.png" style="width:100%">
-		<br><p>Some maquettes</p><br>
+		<br><p style="margin-left:20px; margin-right:20px;" data-en="Some maquettes" data-pt="Algumas maquetes"></p><br>
 		<img src="images/ponte/sala.png" style="width:85%">
-		<br><br><p>Education room</p><br>
+		<br><br><p style="margin-left:20px; margin-right:20px;" data-en="Education room" data-pt="Sala de aulas"></p><br>
 		<img src="images/ponte/miradouro.png" style="width:85%">
-		<br><br><p>Lower level to enjoy the waterfall</p><br>
+		<br><p style="margin-left:20px; margin-right:20px;" data-en="Lower level to enjoy the waterfall" data-pt="Piso inferior para contemplação da cascata"></p><br>
       
 
 
@@ -78,7 +83,8 @@ body {color: white; text-align: center;}
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			
+			<script src="assets/js/main.js"></script><script>function setLanguage(lang) {document.querySelectorAll('[data-pt], [data-en]').forEach(element => {element.innerHTML = element.dataset[lang];});
+					localStorage.setItem('language', lang);}const savedLanguage = localStorage.getItem('language') || 'en'; setLanguage(savedLanguage); </script>
+						
 </body>
 </html>
