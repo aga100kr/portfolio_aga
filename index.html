@@ -196,6 +196,21 @@
 			<script src="media/assets/js/main.js"></script>
 			<script>function setLanguage(lang) {document.querySelectorAll('[data-pt], [data-en]').forEach(element => {element.innerHTML = element.dataset[lang];});
 					localStorage.setItem('language', lang);}const savedLanguage = localStorage.getItem('language') || 'en'; setLanguage(savedLanguage); </script>
-			
+			<script>const projectContainer = document.querySelector("#main");
+				const projects = Array.from(projectContainer.querySelectorAll(".thumb"));
+				document.querySelectorAll("[data-sort]").forEach(button => {button.addEventListener("click", function () {const mode = this.dataset.sort;
+		        projects.sort((a, b) => {
+	            const yearA = Number(a.dataset.year);
+      		    const yearB = Number(b.dataset.year);
+		            if (mode === "newest") {
+             	   	return yearB - yearA;}
+		
+					if (mode === "oldest") {
+               		return yearA - yearB;}
+		        });
+		        projects.forEach(project => {
+            	projectContainer.appendChild(project);});
+			    });});
+			</script>
 	</body>
 </html>
