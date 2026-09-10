@@ -35,25 +35,28 @@
 
 				<!-- Header -->
 					<header id="header">
-						<div class="popup" onclick="myFunction()">Order
-						<span class="popuptext" id="myPopup">
-						<div id="project-controls">
-							<button data-sort="newest";>Newest</button>
-							<button data-sort="oldest";>Oldest</button>
-						</div></span></div><script>
-							// When the user clicks on div, open the popup
-							function myFunction() {
-							  var popup = document.getElementById("myPopup");
- 							 popup.classList.toggle("show");}</script>
 						<nav>
 							<ul>
 								<h1><a href="#footer" data-pt="Mais sobre mim" data-en="More about Me"></a></h1>
 							</ul>
 						</nav>
+						<div class="popup" onclick="myFunction()">Order
+						<span class="popuptext" id="myPopup">
+						<div id="project-controls">
+							<button data-sort="newest";>Newest</button>
+							<button data-sort="oldest";>Oldest</button>
+						</div>
 						<div class="language-switch">
 						    <button onclick="setLanguage('pt')" class="button_small";>PT</button>
 						    <button onclick="setLanguage('en')" class="button_small";>EN</button>
 						</div>
+						</span></div>
+						<script>
+							// When the user clicks on div, open the popup
+							function myFunction() {
+							  var popup = document.getElementById("myPopup");
+ 							 popup.classList.toggle("show");}
+						</script>
 					</header>
 			
 				<!-- Main -->
