@@ -13,7 +13,7 @@
 
 .popup .popuptext {  visibility: hidden;  width: 260px;  background-color: #555;  color: #fff;  text-align: center;  border-radius: 6px;  padding: 8px 0;  position: absolute;  z-index: 1;  bottom: 125%;  left: 50%;  margin-left: 1px;}
 
-.popup .popuptext::after {  content: "";  position: absolute;  top: 100%;  right: 0%;  margin-left: 1px;  border-width: 5px;  border-style: solid;  border-color: #555 transparent transparent transparent;}
+.popup .popuptext::after {  content: "";  position: absolute;  top: 100%;  left: 50%;  margin-left: -400px;  border-width: 5px;  border-style: solid;  border-color: #555 transparent transparent transparent;}
 
 .popup .show {  visibility: visible;  -webkit-animation: fadeIn 1s;  animation: fadeIn 1s;}
 
@@ -40,7 +40,7 @@
 								<h1><a href="#footer" data-pt="Mais sobre mim" data-en="More about Me"></a></h1>
 							</ul>
 						</nav>
-						<div class="popup" onclick="myFunction()">Order
+						<div class="popup" onclick="myFunction()" class="order-icon">≡
 						<span class="popuptext" id="myPopup">
 						<div id="project-controls">
 							<button data-sort="newest";>Newest</button>
