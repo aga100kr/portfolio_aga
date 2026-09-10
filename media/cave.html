@@ -9,43 +9,27 @@
 <style>
 body {color: white; text-align: center;}
 
-* {
-  box-sizing: border-box;
-}
+* {  box-sizing: border-box;}
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.column1 {
-	<! --margin-left:20px;-->
-  float: left;
-  width: 45%;
-  padding: 10px;
-}
-.column2 {
-	<! --margin-right:20px;-->
-  float: right;
-  width: 45%;
-  padding: 10px;
-}
+.center {  display: flex;  justify-content: center;  align-items: center;}
+.column1 {float: left;  width: 45%;  padding: 10px;}
+	
+.column2 { float: right;  width: 45%;  padding: 10px;}
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.row:after {  content: "";  display: table;  clear: both;}
 </style>
 </head>
 
 <body class="is-preloaded">
-
-		<br><h1>Underground Art Gallery for Trancoso</h1>
+		<div class="language-switch">
+   		 <button onclick="setLanguage('pt')">PT</button>
+   		 <button onclick="setLanguage('en')">EN</button>
+		</div>
+		<br><h1 style="margin-left:20px; margin-right:20px;" data-en="Underground Art Gallery for Trancoso" data-pt="Galeria de arte sobterrada para Trancoso"></h1>
         <img src="images/cave/trancoso_cave.jpg" style="width:100%">
-		<br><br><p style="margin-left:20px; margin-right:20px">Underground art gallery beneath a proposed square, developed as part of an urban proposal for Trancoso. 
-		Free from economic constraints, the project sought to maximize the sensory and visual experience of its users, prioritizing spatial quality and artistic engagement.Underground Art Gallery proposal for Trancoso, Portugal, 2024. Part of Trancoso's call to design.</p>
-		<h3 style="margin-left:20px; margin-right:20px">Group: André Andrade, Débora Barros, Roberto Pereira</h3><br>
+		<br><br><p style="margin-left:20px; margin-right:20px" data-en="Underground art gallery beneath a proposed square, developed as part of an urban proposal for Trancoso.<br>Free from economic constraints, the project sought to maximize the sensory and visual experience of its users, prioritizing spatial quality and artistic engagement.Underground Art Gallery proposal for Trancoso, Portugal, 2024. Part of Trancoso's call to design."
+					data-pt="Galeria de arte subterrânea sob uma praça proposta, desenvolvida no âmbito de uma proposta urbana para Trancoso. Livre de constrangimentos económicos, o projeto procurou maximizar a experiência sensorial e visual dos seus utilizadores, privilegiando a qualidade espacial e a relação com a arte. Proposta de Galeria de Arte Subterrânea para Trancoso, Portugal, 2024. Parte do concurso Trancoso's Call to Design."></p>
+		<h3 style="margin-left:20px; margin-right:20px" data-en="Group: André Andrade, Débora Barros, Roberto Pereira" data-pt="Grupo: André Andrade, Débora Barros, Roberto Pereira"></h3><br>
 		<h4 style="margin-left:20px; margin-right:20px;">Professor: Miguel Santiago, UBI</h4><br>
         <div class="sketchfab-embed-wrapper"><iframe title="Underground Art Gallery for Trancoso" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/d0432ace23534a1699611e6a8c6c04b4/embed" style="width: 90%; aspect-ratio: 16 / 9; height: auto;"> </iframe> 
 		<p>Model of the Underground Trancoso's Art Gallery<a href="https://sketchfab.com/3d-models/underground-art-gallery-for-trancoso-d0432ace23534a1699611e6a8c6c04b4">🧷</a></p></div>
@@ -69,6 +53,9 @@ body {color: white; text-align: center;}
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>function setLanguage(lang) {document.querySelectorAll('[data-pt], [data-en]').forEach(element => {element.innerHTML = element.dataset[lang];});
+					localStorage.setItem('language', lang);}const savedLanguage = localStorage.getItem('language') || 'en'; setLanguage(savedLanguage); </script>
+						
 			
 </body>
 </html>
