@@ -9,50 +9,51 @@
 <style>
 body {color: white; text-align: center;}
 
-* {
-  box-sizing: border-box;
-}
+* {  box-sizing: border-box;}
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.column1 {
-        <! --margin-left:20px;-->
-  float: left;
-  width: 45%;
-  padding: 10px;
-}
-.column2 {
-        <! --margin-right:20px;-->
-  float: right;
-  width: 45%;
-  padding: 10px;
-}
+.center {  display: flex;  justify-content: center;  align-items: center;}
+.column1 {  float: left;  width: 45%;  padding: 10px;}
+	
+.column2 {  float: right;  width: 45%;  padding: 10px;}
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.row:after {  content: "";  display: table;  clear: both;}
 </style>
 </head>
 
 <body bgcolor="black" class="is-preloaded">
-
-		<br><h1>Papercrete and other paper experiences</h1>
+		<div class="language-switch">
+   		 <button onclick="setLanguage('pt')">PT</button>
+   		 <button onclick="setLanguage('en')">EN</button>
+		</div>
+		<br><h1 style="margin-left:20px; margin-right:20px;" data-en="Papercrete and other paper experiences" data-pt="Papercrete e outras experiências com papel"></h1>
         <img src="images/paper/pa.png" style="width:90%">
-		<br><br><p style="margin-left:20px; margin-right:20px">Paper is something that is present in my life as a way of allowing me to do crafts since I was in my early years of school, and since then I’ve been experimenting with it, refining the mixtures and forms to a point I was able to even use what i created as forniture for my bedroom.</p><br>
-        <img src="images/boats/barcolimpo.png" style="width:90%"><br><br>
+		<br><br><p style="margin-left:20px; margin-right:20px" 
+					data-en="Paper is something that is present in my life as a way of allowing me to do crafts since I was in my early years of school, and since then I’ve been experimenting with it, refining the mixtures and forms to a point I was able to even use what I created as an anvil, people even confusing it for stone."
+					data-pt="Papel sempre foi um material que me permitiu desenvolver algumas competências e exercitar o meu cérebro, praticando estas manualidades desde que era muito novo. Tenho vindo a experimentar com este material, e especialmente em forma de papercrete ou papel machê com o fim de fazer maquetes duradouras, tendo evoluindo as misturas ao ponto de ter feito algumas que se confundiam com pedra, usando-a por vezes como bigorna."></p><br>
+        <div class="row">
+			<div class="center">
+			<div class="column1">
+			<img src="images/paper/supcom.jpg" style="width:90%; height">
+			</div>
+			<div class="column2">
+			<img src="images/paper/supsem.jpg" style="width:90%; height"
+			</div></div></div>
+		<br><p style="margin-left:20px; margin-right:20px"
+					data-en="The phone holder that when flipped was used as an anvil and before coating looked like stone."
+					data-pt="O suporte de telemóveis que quando voltado com a base para cima, pode ser usado como bigorna. Antes da pintura, parecia granito."></p><br>		
+		<img src="images/boats/barcolimpo.png" style="width:90%"><br><br>
         <img src="images/paper/pblocos.png" style="width:90%"><br><br>
         <img src="images/paper/pmalga.png" style="width:90%">
-		<br><p style="margin-left:20px; margin-right:20px">For that reason, I always intended to applying this techniques to architecture maquetes. Some teachers did like it, giving the idea of considering it as a possible building material, due to paper's properties - a rather good insulator - having easy workability and, in an ecological scope, being easy to recycle.</p><br>
+		<br><p style="margin-left:20px; margin-right:20px"
+					data-en="For that reason, I always intended to applying this techniques to architecture maquetes. Some teachers did like it, giving the idea of considering it as a possible building material, due to paper's properties - a rather good insulator - having easy workability and, in an ecological scope, being easy to recycle."
+					data-pt="Por essa razão, sempre tentei aplicar estas técnicas que conhecia no âmbito da arquitetura para fazer maquetes. Certos professores gostaram da ideia, dando a ideia de se não se poderia aplicar na construção real, escala 1:1, pelas boas propriedades do papel, e por ser uma forma de reciclar. Foi um catalizador para a minha dissertação."></p><br>
         <img src="images/paper/ppiso.png" style="width:90%"><br><br>
         <img src="images/paper/preboco.png" style="width:90%"><br><br>
         <img src="images/paper/pparede.png" style="width:90%"><br><br>
 		<img src="images/paper/pexp.png" style="width:90%">
-		<br><p style="margin-left:20px; margin-right:20px">this last piece was made entirely using paper, wood ash and lime. Later I gave it to teacher in the area of Civil Engineering for testing </p><br>
+		<br><p style="margin-left:20px; margin-right:20px"
+					data-en="This last piece was made entirely using paper, wood ash and lime. Later I gave it to teacher in the area of Civil Engineering for testing."
+					data-pt="Esta última peça foi feita na integra com papel, cinzas de lareira e cal viva. Mais tarde entreguei ao departamento de engenharia Civil da UBI."></p><br>
 		
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
@@ -60,6 +61,9 @@ body {color: white; text-align: center;}
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>function setLanguage(lang) {document.querySelectorAll('[data-pt], [data-en]').forEach(element => {element.innerHTML = element.dataset[lang];});
+					localStorage.setItem('language', lang);}const savedLanguage = localStorage.getItem('language') || 'en'; setLanguage(savedLanguage); </script>
+						
 			
 </body>
 </html>
