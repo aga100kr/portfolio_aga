@@ -9,33 +9,15 @@
 <style>
 body {color: white; text-align: center;}
 
-* {
-  box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.column1 {
-        <! --margin-left:20px;-->
-  float: left;
-  width: 45%;
-  padding: 10px;
-}
-.column2 {
-        <! --margin-right:20px;-->
-  float: right;
-  width: 45%;
-  padding: 10px;
-}
+.center {  display: flex;  justify-content: center;  align-items: center;}
+	
+.column1 {float: left;  width: 45%;  padding: 10px;}
+	
+.column2 {float: right;  width: 45%;  padding: 10px;}
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.row:after {  content: "";  display: table;  clear: both;}
 </style>
 </head>
 
@@ -43,8 +25,10 @@ body {color: white; text-align: center;}
 
 		<br><h1>Proposal of Landspace Rehabilitation of Stavros</h1>
         <img src="images/stavros/pano.jpg" style="width:100%">
-		<br><p style="margin-left:20px; margin-right:20px;">Landscape rehabilitation of Stavros, Town were <i>Zorba the Greek </i> was filmed 🕺, with minimal & pontual (primary) and linking (secundary) interventions. My Main contribution can be seen mostly on the last panel.</p><br>
-		<h3 style="margin-left:20px; margin-right:20px;">Group: André Andrade, David Romero, Joel Gras</h3><br>
+		<br><p style="margin-left:20px; margin-right:20px;" 
+				data-en="Landscape rehabilitation of Stavros, Town were <i>Zorba the Greek </i> was filmed 🕺, with minimal & pontual (primary, rest & sight places) and linking (secundary, walking) interventions. My main contribution was on developing enjoyable walking paths linking the rest spots, that can be seen mostly on the last panel."
+				data-pt="Reabilitação paisagistica de Stavros, localidade onde o filme <i> Zorba the Greek</i> foi gravado 🕺, com intervenções pontuais e mínimas (primárias, de repouso) e de ligação (secundárias, de percurso). A minha contribuição principal foi relativa às ligações entre pontos de repouso, que se pode apreciar no último painel."></p></p><br>
+		<h3 style="margin-left:20px; margin-right:20px;" data-en="Group: " data-pt="Grupo: ">André Andrade, David Romero, Joel Gras</h3><br>
 		<h4 style="margin-left:20px; margin-right:20px;">Professor: Nikolaos Skoutelis, TUC</h4><br>
         <img src="images/stavros/p1.jpg" style="width:90%">
 		<img src="images/stavros/p2.jpg" style="width:90%">
@@ -58,6 +42,9 @@ body {color: white; text-align: center;}
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>function setLanguage(lang) {document.querySelectorAll('[data-pt], [data-en]').forEach(element => {element.innerHTML = element.dataset[lang];});
+					localStorage.setItem('language', lang);}const savedLanguage = localStorage.getItem('language') || 'en'; setLanguage(savedLanguage); </script>
+			
 			
 </body>
 </html>
