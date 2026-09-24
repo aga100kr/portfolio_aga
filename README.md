@@ -3,7 +3,7 @@ https://aga100kr.github.io/portfolio_aga/
 
 EN
 
-Work and side projects by me, André Gonçalves Andrade.
+Work and side projects by me.
 
 Since they don't teach code in architecture, I'm using this site as a side project to learn html and other languages and get back to code (I did a bit of C when I was in eletromechanics back in covid time).
 
