@@ -23,8 +23,7 @@ body {color: white; text-align: center;}
 <body class="is-preloaded">
 	<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
 		<div>
-			<a href="index.html" style="padding: 20px;">Home 🏠</a>
-		</div>
+			<button onclick="principal()">Home 🏠</button>
 		<div class="language-switch">
    			<button onclick="setLanguage('pt')">PT</button>
    			<button onclick="setLanguage('en')">EN</button>
@@ -60,7 +59,7 @@ body {color: white; text-align: center;}
 			<script src="assets/js/main.js"></script>
 			<script>function setLanguage(lang) {document.querySelectorAll('[data-pt], [data-en]').forEach(element => {element.innerHTML = element.dataset[lang];});
 					localStorage.setItem('language', lang);}const savedLanguage = localStorage.getItem('language') || 'en'; setLanguage(savedLanguage); </script>
-						
+			<script>function principal() {window.location.href = "../index.html";}</script>			
 			
 </body>
 </html>
