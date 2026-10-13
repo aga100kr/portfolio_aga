@@ -9,10 +9,28 @@
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 <style>
 body {color: white; text-align: center;
+
+* {box-sizing: border-box;}
+
+.center {  display: flex;  justify-content: center;  align-items: center;}
+	
+.column1 {float: left;  width: 45%;  padding: 10px;}
+	
+.column2 {float: right;  width: 45%;  padding: 10px;}
+/* Clear floats after the columns */
+.row:after {  content: "";  display: table;  clear: both;}
 </style>
 </head>
 
 <body class="is-preloaded">
+	<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+		<div>
+			<button onclick="principal()"">Home 🏠</a></div>
+		<div class="language-switch">
+   			<button onclick="setLanguage('pt')">PT</button>
+   			<button onclick="setLanguage('en')">EN</button>
+		</div>
+	</div>
 		
 		<br><h1>Sound as an Spatial Enhancer</h1>
         <iframe style="width: 90%; aspect-ratio: 16 / 9; height: auto;" src="https://www.youtube.com/embed/r74mGfgFf_U?si=C0Lekct20PGb1AMI?autoplay=1" allow="autoplay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
@@ -23,6 +41,8 @@ body {color: white; text-align: center;
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>function setLanguage(lang) {document.querySelectorAll('[data-pt], [data-en]').forEach(element => {element.innerHTML = element.dataset[lang];});
+					localStorage.setItem('language', lang);}const savedLanguage = localStorage.getItem('language') || 'en'; setLanguage(savedLanguage); </script>
 			<script>function principal() {window.location.href = "..";}</script>
 			
 </body>
