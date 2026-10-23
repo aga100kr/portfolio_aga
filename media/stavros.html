@@ -8,6 +8,21 @@
 <link rel="stylesheet" href="assets/css/main.css" />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 <style>
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {color: white; text-align: center;}
 
 * {box-sizing: border-box;}
@@ -40,10 +55,12 @@ body {color: white; text-align: center;}
 				data-pt="Reabilitação paisagistica de Stavros, localidade onde o filme <i> Zorba the Greek</i> foi gravado 🕺, com intervenções pontuais e mínimas (primárias, de repouso) e de ligação (secundárias, de percurso). A minha contribuição principal foi relativa às ligações entre pontos de repouso, que se pode apreciar no último painel. Já que o meu professor para esta cadeira, Arquitetura Paisagistica (Αρχιτεκτονική του τοπίου) me o permitiu, desenvolvi todos os desenhos da minha parte do trabalho, técnicos ou não, à mão num tablet pequeno."></p></p><br>
 		<h3 style="margin-left:20px; margin-right:20px;" data-en="Group: André Andrade, David Romero, Joel Gras" data-pt="Grupo: André Andrade, David Romero, Joel Gras"></h3><br>
 		<h4 style="margin-left:20px; margin-right:20px;" data-en="Professor: Nikolaos Skoutelis (Νικόλαος Σκουτέλης), TUC (ΠΚ)" data-pt="Professor: Nikólaos Skoutelis (Νικόλαος Σκουτέλης), TUC (ΠΚ)" ></h4><br>
-        <img src="images/stavros/p1.jpg" style="width:90%">
-		<img src="images/stavros/p2.jpg" style="width:90%">
-        <img src="images/stavros/p3.jpg" style="width:90%">
-		<img src="images/stavros/p4.jpg" style="width:90%">
+        <div class="image-grid">
+		<img src="images/stavros/p1.jpg">
+		<img src="images/stavros/p2.jpg">
+        <img src="images/stavros/p3.jpg">
+		<img src="images/stavros/p4.jpg">
+		</div>
 		<img src="images/stavros/pano.jpg" style="width:100%">
 
 			<script src="assets/js/jquery.min.js"></script>
