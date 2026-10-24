@@ -550,14 +550,6 @@ input, select, textarea {
 			opacity: 0.35;
 		}
 
-/*Profile Pic*/
-
-.profile-photo {
-    width: 190px;
-    flex-shrink: 0;
-    border-radius: 12px;
-}
-
 /* Form */
 
 	form {
