@@ -31,6 +31,13 @@
 .column2b {	float: right;  width: 62%;  padding: 15px;}
 /* Clear floats after the columns */
 .row:after {  content: "";  display: table;  clear: both;}
+.zoom {
+  transition: transform .5s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 </style>
 	</head>
 	<body class="is-preload">
@@ -72,17 +79,17 @@
 					<div id="main">
 
 					
-						<article class="thumb" data-year="2025" data-category="architecture sustainable" data-feature="9">
+						<article class="thumb" class="zoom" data-year="2025" data-category="architecture sustainable" data-feature="9">
 							<a href="media/bench.html"><img src="media/images/thumbs/muro.jpg" alt="" style="height:100%"/></a>
 							<h2 style="font-weight: bold;" data-pt="Banco de Jardim em Terra" data-en="Earthen Bench"></h2>
 						</article>
 						
-						<article class="thumb" data-year="2024" data-category="architecture" data-feature="9">
+						<article class="thumb" class="zoom" data-year="2024" data-category="architecture" data-feature="9">
 							<a href="media/cave.html"><img src="media/images/thumbs/cave.jpg" alt="" style="height:100%"/></a>
 							<h2 style="font-weight: bold;" data-pt="Galeria de Arte" data-en="Underground Art Gallery"></h2>
 						</article>
 						
-						<article class="thumb" data-year="2022" data-category="architecture" data-feature="7">
+						<article class="thumb" class="zoom" data-year="2022" data-category="architecture" data-feature="7">
 							<a href="media/ponte.html"><img src="media/images/thumbs/cascata.jpg" alt="" style="height:100%"/></a>
 							<h2 style="font-weight: bold;" data-pt="Ponte Educacional" data-en="Educational Bridge"></h2>
 						</article>
