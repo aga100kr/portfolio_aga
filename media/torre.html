@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Trancoso's Tower</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 <link rel="stylesheet" href="assets/css/main.css" />
@@ -11,10 +12,25 @@ body {color: white; text-align: center;}
 .responsive {
   width: 100%;
   max-width: 1000px;
-  height: auto;
+  height: auto; 
+  margin-left:50px;
+  margin-right:50px;
 }
 * {  box-sizing: border-box;}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
+.image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .center {  display: flex;  justify-content: center;  align-items: center;}
 .column1 {  float: left;  width: 45%;  padding: 10px;}
 .column2 {  float: right;  width: 45%;  padding: 10px;}
@@ -48,16 +64,32 @@ body {color: white; text-align: center;}
   		<img src="images/torre/conjunto.png" class="responsive"><br>
 		<br><p style="width: calc(100% - 40px); max-width: 900px; margin: 0 auto 20px;" data-en="Intended to be built out of adobe or rammed earth, this tower structure was intended to be as versatile as possible to allow the best construction technique for the environment."
 			data-pt="Com o intuito de ser feito em adobe ou taipa, esta torre foi pensada para ser versátil o suficiente para permitir que se possa escolher uma dos duas técnicas de construção."></p><br>
-  		<br><img src="images/torre/secçoes.png" class="responsive">
+  		<div class="image-grid">
+		<img src="images/stavros/piso1.jpg">
+		<img src="images/stavros/piso2.jpg">
+        <img src="images/stavros/piso3.jpg">
+		<img src="images/stavros/piso4.jpg">
+		</div><br><br>
+		<br><p style="width: calc(100% - 40px); max-width: 900px; margin: 0 auto 20px;" data-en="Main maquette done by the group, Tower maquette made by Débora Barros."
+				data-pt="Maqueta geral feita pelo grupo, maqueta da torre feita por Débora Barros."></p><br>
+		<div class="image-grid">
+		<img src="images/torre/maqtotal.jpg">
+		<img src="images/torre/maqvista.jpg">
+		<img src="images/torre/maqporp.jpg">
+		</div><br><br>		
+		<!--img src="images/torre/secçoes.png" class="responsive">
 		<br><p style="width: calc(100% - 40px); max-width: 900px; margin: 0 auto 20px;" data-en="The colors match the surronding buildings, yet its form diverges completely."
-				data-pt="As cores adaptam-se ao entorno, no entanto a forma diverge"></p><br>
+				data-pt="As cores adaptam-se ao entorno, no entanto a forma diverge"></p-->
 		<div class="sketchfab-embed-wrapper"> 
-		<iframe title="Node for an earthen tower" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9596dd1c852c4a8d931efeeaf2f85085/embed"style="width:100%; max-width: 800px; aspect-ratio: 16 / 9; height: auto;"> </iframe>
+		<iframe title="Node for an earthen tower" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9596dd1c852c4a8d931efeeaf2f85085/embed"style="width:100%; max-width: 800px; margin-left:50px;  margin-right:50px; aspect-ratio: 16 / 9; height: auto;"> </iframe>
 		<p>Node for an earthen tower<a href="https://www.behance.net/gallery/236137247/Wood-structure-for-an-earthen-tower-for-Trancoso">🧷</a></p></div>
-		<img src="images/torre/d1.png" class="responsive">
-		<img src="images/torre/d2.png" class="responsive">
-		<img src="images/torre/d3.png" class="responsive">
-		<br><br><p data-en="Some drawing from development process" data-pt="Alguns desenhos do processo de desenvolvimento"></p>
+		<div class="image-grid">
+		<br><p style="width: calc(100% - 40px); max-width: 900px; margin: 0 auto 20px;" data-en="Some drawing from development process."
+				data-pt="Alguns desenhos do processo de desenvolvimento."></p><br>
+		<img src="images/torre/d1.png">
+		<img src="images/torre/d2.png">
+		<img src="images/torre/d3.png">
+		</div>			
 		
                 <div class="center">
                 <ul class="actions">
