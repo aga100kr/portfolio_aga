@@ -443,10 +443,10 @@ input, select, textarea {
 		font-size: 0.9em;
 		font-weight: 250;
 		height: 3.05556em;
-		width: 120px;
+		width: 60px;
 		letter-spacing: 0.1em;
 		line-height: 3.05556em;
-		padding: 0 2.5em;
+		padding: 0 1em;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
