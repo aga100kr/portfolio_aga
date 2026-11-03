@@ -2108,7 +2108,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 610px) {
 
 			#main .thumb {
 				-moz-transition-delay: 1.175s;
