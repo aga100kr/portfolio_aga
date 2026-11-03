@@ -2156,3 +2156,42 @@ input, select, textarea {
 		#footer .copyright a {
 			color: inherit;
 		}
+
+
+/* Project pages - Floating panel */
+
+.project-panel {
+    position: relative;
+    width: calc(100% - 4em);
+    max-width: 1400px;
+    margin: 6em auto 2em auto;
+
+    padding: 3em 4em;
+
+    background: rgba(36, 38, 41, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+/* Project images */
+
+.project-panel img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+
+    .project-panel {
+        width: calc(100% - 2em);
+        margin: 5em auto 1em;
+        padding: 2em 1.5em;
+    }
+
+}
