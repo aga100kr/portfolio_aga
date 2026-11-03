@@ -1123,11 +1123,11 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: rgba(36, 38, 41, 0.85);
+		background: rgba(36, 38, 41, 0.80);
 		bottom: -0.5em;
-		left: 5em;
-		right: 5em;
-		max-height: calc(80vh - 3em);
+		left: 4em;
+		right: 4em;
+		max-height: calc(80vh - 2em);
 		overflow-y: auto;
 		position: fixed;
 		width: auto;
@@ -1202,8 +1202,8 @@ input, select, textarea {
 			}
 
 				.panel > .inner.split > div {
-					left: 1em;
-					right: 1em;
+					left: 2em;
+					right: 2em;
 					width: auto;
 				}
 
@@ -1554,7 +1554,7 @@ input, select, textarea {
 		-moz-user-select: none;
 		-ms-user-select: none;
 		-webkit-user-select: none;
-		background: rgba(36, 33, 31, 0.82);
+		background: rgba(36, 33, 31, 0.75);
   		backdrop-filter: blur(8px);
   		-webkit-backdrop-filter: blur(8px);
 		top: 0;
