@@ -1202,7 +1202,9 @@ input, select, textarea {
 			}
 
 				.panel > .inner.split > div {
-					margin-left: 3em;
+					left: 3em;
+					right: 3em;
+					width: auto;
 				}
 
 				.panel > .closer {
@@ -1222,8 +1224,9 @@ input, select, textarea {
 			}
 
 				.panel > .inner.split > div {
-					margin-left: 0;
-					width: 100%;
+					left: 0.5em;
+					right: 0.5em;
+					width: auto;
 				}
 
 		}
@@ -1239,8 +1242,8 @@ input, select, textarea {
 			}
 
 				.panel > .inner.split > div {
-					margin-left: 0.05em;
-					margin-right: 0.05em;
+					left: 0.05em;
+					right: 0.05em;
 					width: auto;
 				}
 			
