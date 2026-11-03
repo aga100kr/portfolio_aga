@@ -1567,7 +1567,7 @@ input, select, textarea {
 			-moz-transform: translateY(4em);
 			-webkit-transform: translateY(4em);
 			-ms-transform: translateY(4em);
-			transform: translateY(4em);
+			transform: translateY(-4em);
 		}
 
 		#header h1 {
@@ -2144,7 +2144,7 @@ input, select, textarea {
 
 .about-section {
     display: flex;
-    gap: 2em;
+    gap: 0;
     align-items: flex-start;
 }
 
