@@ -1123,10 +1123,10 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: rgba(36, 38, 41, 0.9);
+		background: rgba(36, 38, 41, 0.85);
 		bottom: -0.5em;
-		left: 3em;
-		right: 3em;
+		left: 5em;
+		right: 5em;
 		max-height: calc(80vh - 5em);
 		overflow-y: auto;
 		position: fixed;
