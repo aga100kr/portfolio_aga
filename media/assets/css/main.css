@@ -1202,8 +1202,8 @@ input, select, textarea {
 			}
 
 				.panel > .inner.split > div {
-					left: 3em;
-					right: 3em;
+					left: 1em;
+					right: 1em;
 					width: auto;
 				}
 
@@ -1242,8 +1242,8 @@ input, select, textarea {
 			}
 
 				.panel > .inner.split > div {
-					left: 0.05em;
-					right: 0.05em;
+					left: 0;
+					right: 0;
 					width: auto;
 				}
 			
@@ -2164,8 +2164,8 @@ input, select, textarea {
 
 .project-view {
     width: calc(100% - 4em);
-    left: 3em;
-    right: 3em;
+    left: 1em;
+    right: 1em;
     bottom: 0;
     height: calc(100vh - 7em);
     max-height: none;
@@ -2184,8 +2184,8 @@ input, select, textarea {
 @media screen and (max-width: 736px) {
     .project-view {
         width: calc(100% - 2em);
-        left: 0.05em;
-        right: 0.05em;
+        left: 0;
+        right: 0;
         bottom: 0;
         height: calc(100vh - 6em);
     }
