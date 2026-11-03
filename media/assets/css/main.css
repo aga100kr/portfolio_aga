@@ -1239,8 +1239,8 @@ input, select, textarea {
 			}
 
 				.panel > .inner.split > div {
-					margin-left: 0.5em;
-					margin-right: 0.5em;
+					margin-left: 0.05em;
+					margin-right: 0.05em;
 					width: auto;
 				}
 			
