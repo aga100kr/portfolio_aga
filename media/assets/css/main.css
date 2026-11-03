@@ -1127,7 +1127,7 @@ input, select, textarea {
 		bottom: -0.5em;
 		left: 5em;
 		right: 5em;
-		max-height: calc(120vh - 5em);
+		max-height: calc(80vh - 2em);
 		overflow-y: auto;
 		position: fixed;
 		width: auto;
