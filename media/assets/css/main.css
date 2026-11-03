@@ -2157,17 +2157,95 @@ input, select, textarea {
 			color: inherit;
 		}
 
+/* Project pages - Floating panel */
+
+.project-panel {
+    position: relative;
+    width: calc(100% - 4em);
+    max-width: 1400px;
+    margin: 6em auto 2em auto;
+
+    padding: 3em 4em;
+
+    background: rgba(36, 38, 41, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+/* Project images */
+
+.project-panel img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+
+    .project-panel {
+        width: calc(100% - 2em);
+        margin: 5em auto 1em;
+        padding: 2em 1.5em;
+    }
+
+}
+
+/* PROJECT PAGES */
+
+.project-panel {
+    position: relative;
+
+    width: calc(100% - 4em);
+    max-width: 1400px;
+
+    margin: 2em auto 2em auto;
+    padding: 3em 4em;
+
+    background: rgba(36, 38, 41, 0.92);
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+/* Images */
+
+.project-panel img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+
+    .project-panel {
+        width: calc(100% - 2em);
+        margin: 1em auto;
+        padding: 2em 1.5em;
+    }
+
+}
+
 /* PROJECT PANELS */
 
 .project-view {
     width: calc(100% - 4em);
     left: 3em;
     right: 3em;
-    bottom: -0.1em;
-    height: calc(100vh - 6em);
+    bottom: 0;
+    height: calc(100vh - 7em);
     max-height: none;
     padding: 0;
-    border-radius: 12px;
     overflow: hidden;
     background: rgba(36, 38, 41, 0.85);
 }
@@ -2184,7 +2262,7 @@ input, select, textarea {
         width: calc(100% - 2em);
         left: 0;
         right: 0;
-        bottom: -0.2em;
+        bottom: 0;
         height: calc(100vh - 6em);
     }
 }
