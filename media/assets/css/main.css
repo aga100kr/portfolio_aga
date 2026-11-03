@@ -1564,9 +1564,9 @@ input, select, textarea {
 	}
 
 		body.is-preload #header {
-			-moz-transform: translateY(4em);
-			-webkit-transform: translateY(4em);
-			-ms-transform: translateY(4em);
+			-moz-transform: translateY(-4em);
+			-webkit-transform: translateY(-4em);
+			-ms-transform: translateY(-4em);
 			transform: translateY(-4em);
 		}
 
