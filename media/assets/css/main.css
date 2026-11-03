@@ -2160,6 +2160,16 @@ input, select, textarea {
 			color: inherit;
 		}
 
+@media screen and (max-width: 736px) {
+
+    #footer.panel {
+        left: 0;
+        right: 0;
+        width: 100%;
+        bottom: 0;
+        border-radius: 0;
+    }
+
 /* PROJECT PANELS */
 
 .project-view {
