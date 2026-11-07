@@ -1554,7 +1554,7 @@ input, select, textarea {
 		-moz-user-select: none;
 		-ms-user-select: none;
 		-webkit-user-select: none;
-		background: rgba(36, 33, 31, 0.75);
+		background: rgba(36, 33, 31, 0.6);
   		backdrop-filter: blur(8px);
   		-webkit-backdrop-filter: blur(8px);
 		top: 0;
