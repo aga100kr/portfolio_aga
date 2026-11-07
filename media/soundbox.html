@@ -21,18 +21,23 @@ body {color: white; text-align: center;
 .row:after {  content: "";  display: table;  clear: both;}
 </style>
 </head>
-
+	
+					<header id="header">
+						<nav>
+							<ul>
+								<!--h1><a style="font-weight: bold;" href="#footer" data-pt="Sobre mim" data-en="About Me"></a></h1-->
+								<button onclick="principal()"">Home 🏠</a></div>
+							</ul>
+						</nav>
+							<div class="language-switch">
+								<button class="button_header_principal" onclick="setLanguage('pt')";>PT</button>
+						    	<button class="button_header_principal" onclick="setLanguage('en')";>EN</button>
+							</div>
+					</header>
+			
 <body class="is-preloaded">
-	<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-		<div>
-			<button onclick="principal()"">Home 🏠</a></div>
-		<div class="language-switch">
-   			<button onclick="setLanguage('pt')">PT</button>
-   			<button onclick="setLanguage('en')">EN</button>
-		</div>
-	</div>
 		
-		<br><h1 style="margin-left:20px; margin-right:20px;" data-en="Sound as an Spatial Enhancer" data-pt="Som como Fomentor de Espaço"></h1>
+		<h1 style="margin-left:20px; margin-right:20px;" data-en="Sound as an Spatial Enhancer" data-pt="Som como Fomentor de Espaço"></h1>
         <iframe style="width: 90%; aspect-ratio: 16 / 9; height: auto;" src="https://www.youtube.com/embed/r74mGfgFf_U?si=C0Lekct20PGb1AMI?autoplay=1" allow="autoplay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
 
 			<script src="assets/js/jquery.min.js"></script>
