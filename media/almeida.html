@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="assets/css/main.css" />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 <style>
-body {color: white; text-align: center;
+body {color: white; text-align: center;}
 
 * {box-sizing: border-box;}
 
@@ -79,6 +79,13 @@ body::before {
         background-position: center;
     }
 }
+	video {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+}
 </style>
 </head>
 	
@@ -98,7 +105,7 @@ body::before {
 <body class="is-preloaded">
 		<p>'</p>		
 		<br><h1 style="margin-left:20px; margin-right:20px;" data-en="Sound as an Spatial Enhancer" data-pt="Som como Fomentor de Espaço"></h1>
-        <video width="800" controls autoplay loop>
+        <video width="800" controls autoplay loop preload="auto">
 		  <source src="images/projection.mp4" type="video/mp4">
   		  Your browser does not support the video tag.
 		</video>
