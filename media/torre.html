@@ -9,36 +9,21 @@
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 <style>
 body {color: white; text-align: center;}
-.responsive {
-  width: calc(100% - 60px);
-  max-width: 1000px;
-  height: auto;
-}
+	
+.responsive {  width: calc(100% - 60px);  max-width: 1000px;  height: auto;}
+	
 * {  box-sizing: border-box;}
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-    max-width: 2400px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+	
+.image-grid {    display: grid;    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));    gap: 20px;    max-width: 2400px;    margin: 0 auto;    padding: 0 20px;}
 
-.image-grid img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+.image-grid img {    width: 100%;    height: auto;    display: block;}
 .center {  display: flex;  justify-content: center;  align-items: center;}
 .column1 {  float: left;  width: 45%;  padding: 10px;}
 .column2 {  float: right;  width: 45%;  padding: 10px;}
 /* Clear floats after the columns */
 .row:after {  content: "";  display: table;  clear: both;}
 
-/* PARALLAX BACKGROUND */
-
 body {
-    background: transparent !important;
     position: relative;
     isolation: isolate;
 }
