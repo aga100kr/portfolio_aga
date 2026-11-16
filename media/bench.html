@@ -33,26 +33,6 @@ body {
     isolation: isolate;
 }
 
-/* Camada de fundo */
-body::before {
-    content: "";
-    position: fixed;
-    top: -5vh;
-    left: 0;
-    width: 100%;
-    height: 110vh;
-    z-index: -1;
-    pointer-events: none;
-
-    background-image: url("images/a.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    opacity: 0.05;
-    filter: grayscale(100%);
-}
-
 /* Movimento associado ao scroll */
 @supports (animation-timeline: scroll()) {
     body::before {
