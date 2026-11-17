@@ -27,70 +27,19 @@ body {color: white; text-align: center;}
 
 /* PARALLAX BACKGROUND */
 
-body {
-    position: relative;
-    isolation: isolate;
-}
+body {    position: relative;    isolation: isolate;}
 
 /* Camada de fundo */
-body::before {
-    content: "";
-    position: fixed;
-    top: -5vh;
-    left: 0;
-    width: 100%;
-    height: 110vh;
-    z-index: -1;
-    pointer-events: none;
+body::before {    content: "";    position: fixed;    top: -5vh;    left: 0;    width: 100%;    height: 110vh;    z-index: -1;    pointer-events: none;
 
-    background-image: url("images/a.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    opacity: 0.05;
-    filter: grayscale(100%);
-}
+    background-image: url("images/a.png");    background-size: cover;    background-position: center center;    background-repeat: no-repeat;    opacity: 0.05;    filter: grayscale(100%);}
 
 /* Movimento associado ao scroll */
-@supports (animation-timeline: scroll()) {
-    body::before {
-        animation: parallax-background linear both;
-        animation-timeline: scroll(root);
-    }
+@supports (animation-timeline: scroll()) {    body::before {        animation: parallax-background linear both;        animation-timeline: scroll(root);    }
 
-    @keyframes parallax-background {
-        from {
-            transform: translate3d(0, -4vh, 0);
-        }
-        to {
-            transform: translate3d(0, 4vh, 0);
-        }
-    }
-}
+    @keyframes parallax-background {        from {            transform: translate3d(0, -4vh, 0);        }        to {            transform: translate3d(0, 4vh, 0);        }    }}
 
-/* Desativar movimento para quem prefere movimento reduzido */
-@media (prefers-reduced-motion: reduce) {
-    body::before {
-        animation: none !important;
-    }
-}
-
-/* Em telemóveis, evitar problemas com o movimento */
-@media (max-width: 768px) {
-    body::before {
-        animation: none !important;
-        background-position: center;
-    }
-}
-
-.portfolio-video {
-    display: block;
-    width: calc(100% - 60px);
-    max-width: 1000px;
-    height: auto;
-	margin: auto;
-}
+.portfolio-video {    display: block;    width: calc(100% - 60px);    max-width: 1000px;    height: auto;	margin: auto;}
 </style>
 </head>
 	
@@ -131,12 +80,12 @@ body::before {
 		<br><br>
 		<img src="images/almeida/alme02.png" style="width:100%" class="responsive">
 		<br><br>
-		<!--img src="images/almeida/alm03.jpg" loading="lazy" style="width:100%" class="responsive"-->
-		<br><br>
+		<!--img src="images/almeida/alm03.jpg" loading="lazy" style="width:100%" class="responsive">
+		<br><br-->
 		<img src="images/almeida/ceninha.jpg" loading="lazy" style="width:100%" class="responsive">
 		<br><br>
-		<!--img src="images/almeida/fsef.jpg" loading="lazy" style="width:100%" class="responsive"-->
-		<br><br>
+		<!--img src="images/almeida/fsef.jpg" loading="lazy" style="width:100%" class="responsive">
+		<br><br-->
 		<iframe style="width: calc(100% - 60px); max-width: 800px; aspect-ratio: 16 / 9; height: auto;" src="https://www.youtube.com/embed/0KL1Cq-HRss?si=NYeXcIxN6qg1YyXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
 		
 			<script src="assets/js/jquery.min.js"></script>
